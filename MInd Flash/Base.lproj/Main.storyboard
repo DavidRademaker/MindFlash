@@ -40,18 +40,30 @@
                                     <constraint firstAttribute="height" constant="30" id="nvu-KP-IJj"/>
                                 </constraints>
                                 <state key="normal" title="Answer A"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdY-MQ-q7A"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LA-Ll-ZwV">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LA-Ll-ZwV">
                                 <rect key="frame" x="44" y="428" width="286" height="30"/>
                                 <state key="normal" title="Answer B"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnq-yW-Ocy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-S8-gpl">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-S8-gpl">
                                 <rect key="frame" x="44" y="489" width="286" height="30"/>
                                 <state key="normal" title="Answer C"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5n-2P-6Y3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDS-gd-sOk">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDS-gd-sOk">
                                 <rect key="frame" x="44" y="545" width="286" height="30"/>
                                 <state key="normal" title="Answer D"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZMX-AG-f2M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-CI-uus">
                                 <rect key="frame" x="173" y="20" width="95" height="30"/>
@@ -68,6 +80,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy7-ty-DNr">
                                 <rect key="frame" x="292" y="20" width="46" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drM-Ls-oBC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,6 +102,7 @@
                             <constraint firstItem="gLb-KY-52Y" firstAttribute="trailing" secondItem="1LA-Ll-ZwV" secondAttribute="trailing" id="ZJe-cF-Nin"/>
                             <constraint firstItem="lPm-S8-gpl" firstAttribute="top" secondItem="1LA-Ll-ZwV" secondAttribute="bottom" constant="31" id="eHf-Pl-1Ok"/>
                             <constraint firstItem="gLb-KY-52Y" firstAttribute="leading" secondItem="Yjs-Qb-cE7" secondAttribute="leading" id="gAJ-aN-QgR"/>
+                            <constraint firstItem="Yjs-Qb-cE7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h1R-hO-ZG6"/>
                             <constraint firstAttribute="bottom" secondItem="gLb-KY-52Y" secondAttribute="bottom" constant="267" id="i5Q-1c-2wU"/>
                             <constraint firstItem="gLb-KY-52Y" firstAttribute="trailing" secondItem="FDS-gd-sOk" secondAttribute="trailing" id="jyn-u8-onq"/>
                             <constraint firstItem="Yjs-Qb-cE7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44.5" id="k3F-S5-s7u"/>
@@ -98,6 +114,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addQuestionButton" destination="3Wg-CI-uus" id="faJ-Wb-gh0"/>
+                        <outlet property="questionLabel" destination="Yjs-Qb-cE7" id="IQk-Ua-YVp"/>
+                        <outlet property="scoreLabel" destination="BbH-5x-NdZ" id="tXg-HS-Rcn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +142,9 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beo-en-jc7">
                                 <rect key="frame" x="294" y="20" width="65" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="yjg-Qg-CNw" eventType="touchUpInside" id="z0i-Ea-kC8"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QSt-ZE-twP">
                                 <rect key="frame" x="46" y="596" width="282" height="29"/>
@@ -221,6 +245,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ccm-Ml-vRR"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="Beo-en-jc7" id="U4m-J2-aHq"/>
+                        <outlet property="answer1TextField" destination="WuZ-kN-ggQ" id="5Ar-hv-BLT"/>
+                        <outlet property="answer2TextField" destination="gQk-l9-Ymr" id="PID-Vr-wBB"/>
+                        <outlet property="answer3TextField" destination="b6b-vh-hZb" id="Jqk-Be-iBS"/>
+                        <outlet property="answer4TextField" destination="IfU-3V-EKv" id="mm3-rh-S4L"/>
+                        <outlet property="cancelButton" destination="Mdk-UA-CU2" id="oPz-FM-eHS"/>
+                        <outlet property="correctAnswerController" destination="QSt-ZE-twP" id="nLt-XM-ikI"/>
+                        <outlet property="questionTextField" destination="kel-bT-vmK" id="Fuk-Sm-rw2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqt-rx-2bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
