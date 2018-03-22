@@ -37,7 +37,9 @@ class GuessViewController: UIViewController {
             questionArray.append(question3)
         }
         
-        
+        func generateQuestion() {
+            let randomQuestionIndex = Int(arc4random_uniform(UInt32(questionArray.count - 1)))
+        }
         
     }
     
