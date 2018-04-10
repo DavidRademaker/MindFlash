@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBAD8F8C20604685002E850E /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD8F8B20604685002E850E /* GuessViewController.swift */; };
+		BBAD8F8E2060469A002E850E /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD8F8D2060469A002E850E /* CreateQuestionViewController.swift */; };
+		BBAD8F902061A0B1002E850E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD8F8F2061A0B1002E850E /* Question.swift */; };
 		BBDBED5720602CE2006E1315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDBED5620602CE2006E1315 /* AppDelegate.swift */; };
-		BBDBED5920602CE2006E1315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDBED5820602CE2006E1315 /* ViewController.swift */; };
 		BBDBED5C20602CE2006E1315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDBED5A20602CE2006E1315 /* Main.storyboard */; };
 		BBDBED5F20602CE2006E1315 /* MInd_Flash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBDBED5D20602CE2006E1315 /* MInd_Flash.xcdatamodeld */; };
 		BBDBED6120602CE2006E1315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDBED6020602CE2006E1315 /* Assets.xcassets */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBAD8F8B20604685002E850E /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		BBAD8F8D2060469A002E850E /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
+		BBAD8F8F2061A0B1002E850E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BBDBED5320602CE2006E1315 /* MInd Flash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MInd Flash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDBED5620602CE2006E1315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBDBED5820602CE2006E1315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBDBED5B20602CE2006E1315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBDBED5E20602CE2006E1315 /* MInd_Flash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MInd_Flash.xcdatamodel; sourceTree = "<group>"; };
 		BBDBED6020602CE2006E1315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				BBDBED5620602CE2006E1315 /* AppDelegate.swift */,
-				BBDBED5820602CE2006E1315 /* ViewController.swift */,
 				BBDBED5A20602CE2006E1315 /* Main.storyboard */,
 				BBDBED6020602CE2006E1315 /* Assets.xcassets */,
 				BBDBED6220602CE2006E1315 /* LaunchScreen.storyboard */,
 				BBDBED6520602CE2006E1315 /* Info.plist */,
 				BBDBED5D20602CE2006E1315 /* MInd_Flash.xcdatamodeld */,
+				BBAD8F8B20604685002E850E /* GuessViewController.swift */,
+				BBAD8F8D2060469A002E850E /* CreateQuestionViewController.swift */,
+				BBAD8F8F2061A0B1002E850E /* Question.swift */,
 			);
 			path = "MInd Flash";
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDBED5920602CE2006E1315 /* ViewController.swift in Sources */,
+				BBAD8F902061A0B1002E850E /* Question.swift in Sources */,
+				BBAD8F8E2060469A002E850E /* CreateQuestionViewController.swift in Sources */,
+				BBAD8F8C20604685002E850E /* GuessViewController.swift in Sources */,
 				BBDBED5F20602CE2006E1315 /* MInd_Flash.xcdatamodeld in Sources */,
 				BBDBED5720602CE2006E1315 /* AppDelegate.swift in Sources */,
 			);
